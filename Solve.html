@@ -79,16 +79,13 @@
     </div>
 
     <!--Exercise 4-->
-    <div class="col-lg-12 text-center">
+    <div class="col-lg-12 text-center bg-light text-dark">
         <h2 class="mt-5">Exercise 4</h2>
         <p class="lead">Write a program that determines whether a word is a Palindrome</p>
 
         <input type="number" id="Palindrome" />
         <button onclick="this.innerHTML=Date()">Palindrome</button>
     </div>
-
-
-
 
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -97,7 +94,7 @@
     <!-- Prism -->
     <script src="prism.js"></script>
 
-    <!-- Taco Cat -->
+    <!-- Taco Cat JavaScript-->
     <pre><code>
     <script>
 
@@ -108,7 +105,18 @@
             var charactor
         }
 
-</script>
+        function palindrome(str: any) any {
+            let reg = /[\W_]/g;
+            let smallStr = str.toLowerCase().replace(reg, "");
+            let reversed = smallStr.split("").reverse().join("");
+            if (reversed === smallStr) return true;
+
+            return false;
+            palindrome("");
+            }
+
+
+    </script>
      </code></pre>
 
 </body>
