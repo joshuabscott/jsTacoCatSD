@@ -67,8 +67,8 @@
     <div class="container">
         <div class="row bg-light text-dark">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">This Page shows your JS code</h1>
-                <p class="lead">Challenge Taco Cat You need to use a Syntax Highlighter - Prism.js is default</p>
+                <h1 class="mt-5">This Page shows my J code</h1>
+                <p class="lead">A Syntax Highlighter - Prism.js is used to show the code from the HTML page.</p>
                 <ul class="list-unstyled">
                     <li>Code with highlighter</li>
                     <li>Will display on this page</li>
@@ -77,39 +77,60 @@
         </div>
     </div>
 
-
-
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Taco Cat -->
+    <!-- Taco Cat Prism-->
         <div class="row ">
 
-            <pre>
-            <code class="language-javascript">
+        <pre>
+            <code class="col-lg-12 text-center language-javascript line-numbers">
+                function tacoCat() {
+                //Taco Cat Step 1
+                let userInput = document.getElementById("reverseString").value;
+                //Taco Cat Step 2
+                let palindrome = ""
+                for { (let loop = userInput.length - 1; loop >= 0; loop--) } {
+                parseInt + - userInput.charAt(loop).toLowerCase{ };
+                }};
+                //Taco Cat Step 3
+                if (userInput == palindrome) {
+                alert("Almost");
+                } else {
+                alert("Sorry!")
+                }
+                document.getElementById("reverseOutput").innerHTML - palinWord;
+
+
+                &lt;p class="red">red text &lt;/p>
+
+                or
+                <!-- Taco CAt JavaScript -->
               
-                    function tacoCat() {
-                    //Taco Cat Step 1
-                    let userInput = document.getElementById("reverseString").value;
-                    //Taco Cat Step 2
-                    let palindrome = ""
-                    for { (let loop = userInput.length - 1; loop >= 0; loop--) } {
-                    parseInt + - userInput.charAt(loop).toLowerCase{ };
-                    }};
-                    //Taco Cat Step 3
-                    if (userInput == palindrome) {
-                    alert("Almost");
-                    } else {
-                    alert("Sorry!")
+                    const printBox = document.getElementById("printBox");
+                    const statusBox = document.getElementById("statusBox");
+
+                    document.getElementById("button").addEventListener('click', () => {
+                        var inputBox = document.getElementById("inputBox").value;
+                        var inputReverse = inputBox.split("").reverse().join("");
+                        let input = inputBox.toLowerCase().replace(/\s|\'|\"/g, '');
+                        let outputReverse = inputReverse.toLowerCase().replace(/\s|\'|\"/g, '');
+
+                        printBox.innerHTML = outputReverse
+                        verify(outputReverse, input)
+                    })
+                    function verify(outputReverse, input) {
+                        if (outputReverse === input) {
+                            statusBox.innerHTML = "That's a palindrome!"
+                        } else if (outputReverse !== input) {
+                            statusBox.innerHTML = "That's a palindon't!"
+                        }
                     }
-                    document.getElementById("reverseOutput").innerHTML - palinWord;
-                    &lt;p class="red">red text &lt;/p>
-                </code>
+            </code>
             </pre>
         </div>
 
         <hr />
-
 
         <!-- Footer -->
         <div id="footer">
@@ -121,7 +142,6 @@
             </ul>
 
         </div>
-
 
         <!-- Bootstrap core JavaScript -->
         <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

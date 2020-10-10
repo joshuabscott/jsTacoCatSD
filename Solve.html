@@ -67,7 +67,7 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Taco Cat -->
+        <!-- Taco Cat Text-->
         <div class="row ">
             <div class="col-lg-8 text-center bg-light text-dark">
                 <h1 class="mt-5">Taco Cat</h1>
@@ -80,43 +80,108 @@
         </div>
 
         <hr />
+        <section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
+            <div class="color-block d-none d-lg-block"></div>
+            <div class="row home-details-container align-items-center">
+                <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
+                <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
+                    <div>
+                        <img src="Content/img/tacocat.png" title="https://www.deviantart.com/ragnaruz" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" />
+                        <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">Mini Project</h6>
+                        <h1 class="text-uppercase poppins-font"><span>TACO </span>CAT</h1>
+                        <p class="open-sans-font text-dark h4"> <span class="h4" id="statusBox"></span></p>
+                        <p class="open-sans-font text-dark h4"> <span id="printBox"></span></p>
+                        <input type="text" pattern="[A-Za-z]{3}" id="inputBox" value="red" />
+                    </div>
+                    <div class="row text-center">
+                    </div>
+                    <div class="row text-center">
+                        <button class="btn btn-warning" id="button">DO MAGIC</button>
+                    </div>
 
-        <!--Write a program-->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="footer">
+
+            <!-- Copyright -->
+            <ul class="copyright">
+                <li>&copy; Josh Scott.xyz All rights reserved.</li>
+                <li>Design: <a href="http://joshscott.xyz">Josh Scott</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- Prism -->
+        <script src="prism.js"></script>
+
+        <!-- Taco CAt JavaScript -->
+        <script>
+            const printBox = document.getElementById("printBox");
+            const statusBox = document.getElementById("statusBox");
+
+            document.getElementById("button").addEventListener('click', () => {
+                var inputBox = document.getElementById("inputBox").value;
+                var inputReverse = inputBox.split("").reverse().join("");
+                let input = inputBox.toLowerCase().replace(/\s|\'|\"/g, '');
+                let outputReverse = inputReverse.toLowerCase().replace(/\s|\'|\"/g, '');
+
+                printBox.innerHTML = outputReverse
+                verify(outputReverse, input)
+            })
+            function verify(outputReverse, input) {
+                if (outputReverse === input) {
+                    statusBox.innerHTML = "That's a palindrome!"
+                } else if (outputReverse !== input) {
+                    statusBox.innerHTML = "That's a palindon't!"
+                }
+            }
+
+        </script>
+        <!--Write a program to Reverse a String-->
+        <!--
         <div class="row">
             <div class="col-lg-8 text-center bg-light text-dark">
                 <h2 class="mt-5">Write a program</h2>
-                <p class="lead">Write a program that determines whether a word is a Palindrome</p>
+                <p class="lead">
+                    Enter a word or phrase and see it in reverse of what you entered. Is the word a Palindrome?
+                    Example: the user enters “developer” the output is “repoleved”
+                </p>
             </div>
-
-
 
         </div>
 
         <div class="input-group col-lg-8 mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                <span class="input-group-text" id="inputGroup-sizing-default">Check for Palindrome</span>
             </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            <input id="Palindrome" placeholder="Enter Word" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 
         </div>
 
-        <button type="button" class="btn btn-outline-primary">Primary</button>
 
-        <input id="Palindrome" placeholder="Enter Word" />
-        <br />
         <button id="btn1" onclick="this.innerHTML=fn1()">Check for Palindrome</button>
+        <input id="Palindrome" placeholder="Enter Word" />
+
 
     </div>
 
     <!-- Taco Cat JavaScript-->
-    <script>
+        <!--  <script>
         function fn1() {
             let str = document.getElementById("text1").value;
             alert("Value inside the text box" + str);
         }
     </script>
     <!-- Taco Cat JavaScript-->
-    <script>
+        <!--       <script>
 
         document.getElementById("btnTaco").addEventListener("click", function ();
 
@@ -125,7 +190,7 @@
             var charactor
         }
 
-                        function palindrome(str: any) any {
+                                            function palindrome(str: any) any {
             let reg = /[\W_]/g;
             let smallStr = str.toLowerCase().replace(reg, "");
             let reversed = smallStr.split("").reverse().join("");
@@ -133,7 +198,7 @@
 
         return false;
         palindrome("");
-                            }
+                                                }
 
 
     </script>
@@ -156,27 +221,11 @@
         document.getElementById("reverseOutput").innerHTML - palinWord;
     </script>
 
-    <pre><code> </code></pre>
-
+    <pre><code> </code></pre>->
 
 
     <!-- Footer -->
-    <div id="footer">
-
-        <!-- Copyright -->
-        <ul class="copyright">
-            <li>&copy; Josh Scott.xyz All rights reserved.</li>
-            <li>Design: <a href="http://joshscott.xyz">Josh Scott</a></li>
-        </ul>
-
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <!-- Prism -->
-    <script src="prism.js"></script>
 
 </body>
 
