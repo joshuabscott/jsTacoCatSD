@@ -151,6 +151,8 @@
     <Content Include="jsImages\SQL logo.png" />
     <Content Include="jsImages\SUPER DOG logo.PNG" />
     <Content Include="jsImages\XAMARIN logo.png" />
+    <Content Include="prism.css" />
+    <Content Include="prism.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\JavaScript.js" />

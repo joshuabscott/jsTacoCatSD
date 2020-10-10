@@ -16,6 +16,7 @@
     <link rel="shortcut icon" href="jsImages/favicon.ico" />
     <!-- Prism -->
     <link href="themes/prism.css" rel="stylesheet" />
+
 </head>
 
 <!-- Taco Cat Background Image -->
@@ -23,6 +24,15 @@
     body {
         background-image: url('jsImages/jsTacoCat.png');
         background-color: #cccccc;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* Set the fixed height of the footer here */
+        line-height: 60px; /* Vertically center the text there */
+        background-color: #f5f5f5;
     }
 </style>
 
@@ -66,7 +76,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-12 text-center bg-light text-dark">
+            <div class="col-lg-8 text-center bg-light text-dark">
                 <h1 class="mt-5">Taco Cat</h1>
                 <p class="lead">
                     A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam, racecar.
@@ -80,7 +90,7 @@
 
         <!-- Challenge DESCRIPTION -->
         <div class="row ">
-            <div class="col-lg-12 text-center bg-light text-dark">
+            <div class="col-lg-8 text-center bg-light text-dark">
                 <h2 class="mt-5">Challenge Description</h2>
                 <ul class="list-unstyled">
                     <li>
@@ -99,7 +109,7 @@
         <hr />
 
         <!--BACKGROUND-->
-        <div class="row-lg-12 text-center bg-light text-dark">
+        <div class="col-lg-8 text-center bg-light text-dark">
             <h2 class="mt-5">Background</h2>
             <p class="lead">
                 The Taco Cat coding challenge is based on the more traditional “Reverse a string” exercise but
@@ -113,52 +123,56 @@
 
         <hr />
 
-         
 
-    <!-- Index Page Content -->
-    <section>
 
-        <!-- Technologies Used & Extra Credit-->
-        <div class="container">
+        <!-- Index Page Content -->
+        <section>
 
-            <div class="row">
-                <div class="col-6 text-center bg-light text-dark">
-                    <h2 class="col-6">Technologies Used</h2>
-                    <p class="lead">
-                        HTML, JavaScript, jQuery, CSS, Bootstrap
-                    </p>
+            <!-- Technologies Used & Extra Credit-->
+            <div class="container ">
 
+                <div class="row">
+                    <div class="col-6 text-center bg-light text-dark">
+                        <h2 class="col-6">Technologies Used</h2>
+                        <p class="lead">
+                            HTML, JavaScript, jQuery, CSS, Bootstrap
+                        </p>
+
+                    </div>
+
+                    <div class="col-6 text-center bg-light text-dark">
+                        <h2 class="col-6">Extra Credit</h2>
+                        <p class="lead">
+                            Determine if the word or phrase entered by the
+                            user is a palindrome.
+                        </p>
+
+                    </div>
                 </div>
 
-                <div class="col-6 text-center bg-light text-dark">
-                    <h2 class="col-6">Extra Credit</h2>
-                    <p class="lead">
-                        Determine if the word or phrase entered by the
-                        user is a palindrome.
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 
             </div>
+        </section>
 
-            <button type="button" class="btn btn-outline-primary">Primary</button>
+
+        <!-- Footer -->
+        <div id="footer bg-light text-dark">
+
+            <!-- Copyright -->
+            <ul class="copyright">
+                <li>&copy; Josh Scott.xyz All rights reserved.</li>
+                <li>Design: <a href="http://joshscott.xyz">Josh Scott</a></li>
+            </ul>
 
         </div>
-    </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <!-- Prism -->
-    <script src="prism.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- Prism -->
+        <script src="prism.js"></script>
+
 </body>
 
 </html>

@@ -69,12 +69,12 @@
 
         <!-- Taco Cat -->
         <div class="row ">
-            <div class="col-lg-12 text-center bg-light text-dark">
+            <div class="col-lg-8 text-center bg-light text-dark">
                 <h1 class="mt-5">Taco Cat</h1>
                 <p class="lead">Challenge Taco Cat This page will display your JS exercise</p>
                 <ul class="list-unstyled">
                     <li>Write a program that allows a user to enter in a word or phrase and then prints out the reverse of what was entered. Example: the user enters “developer” the output is “repoleved”.</li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -83,23 +83,39 @@
 
         <!--Write a program-->
         <div class="row">
-            <div class="col-lg-12 text-center bg-light text-dark">
+            <div class="col-lg-8 text-center bg-light text-dark">
                 <h2 class="mt-5">Write a program</h2>
                 <p class="lead">Write a program that determines whether a word is a Palindrome</p>
             </div>
-            <input type="number" id="Palindrome" />
-            <button onclick="this.innerHTML=Date()">Palindrome</button>
+
+
+
         </div>
+
+        <div class="input-group col-lg-8 mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+        </div>
+
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+
+        <input id="Palindrome" placeholder="Enter Word" />
+        <br />
+        <button id="btn1" onclick="this.innerHTML=fn1()">Check for Palindrome</button>
+
     </div>
-    <!-- Bootstrap core JavaScript -->
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <!-- Prism -->
-    <script src="prism.js"></script>
 
     <!-- Taco Cat JavaScript-->
-    <pre><code>
+    <script>
+        function fn1() {
+            let str = document.getElementById("text1").value;
+            alert("Value inside the text box" + str);
+        }
+    </script>
+    <!-- Taco Cat JavaScript-->
     <script>
 
         document.getElementById("btnTaco").addEventListener("click", function ();
@@ -109,19 +125,58 @@
             var charactor
         }
 
-        function palindrome(str: any) any {
+                        function palindrome(str: any) any {
             let reg = /[\W_]/g;
             let smallStr = str.toLowerCase().replace(reg, "");
             let reversed = smallStr.split("").reverse().join("");
-            if (reversed === smallStr) return true;
+            if(reversed === smallStr) return true;
 
-            return false;
-            palindrome("");
-            }
+        return false;
+        palindrome("");
+                            }
 
 
     </script>
-     </code></pre>
+
+    <script>
+        function tacoCat() {
+            //Taco Cat Step 1
+            let userInput = document.getElementById("reverseString").value;
+            //Taco Cat Step 2
+            let palindrome = ""
+            for { (let loop = userInput.length - 1; loop >= 0; loop--) } {
+            parseInt + - userInput.charAt(loop).toLowerCase{ };
+        }};
+        //Taco Cat Step 3
+        if (userInput == palindrome) {
+            alert("Almost");
+        } else {
+            alert("Sorry!")
+        }
+        document.getElementById("reverseOutput").innerHTML - palinWord;
+    </script>
+
+    <pre><code> </code></pre>
+
+
+
+    <!-- Footer -->
+    <div id="footer">
+
+        <!-- Copyright -->
+        <ul class="copyright">
+            <li>&copy; Josh Scott.xyz All rights reserved.</li>
+            <li>Design: <a href="http://joshscott.xyz">Josh Scott</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Prism -->
+    <script src="prism.js"></script>
 
 </body>
 
